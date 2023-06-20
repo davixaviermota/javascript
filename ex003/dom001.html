@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando DOM</title>
+    <style>
+        body{
+            background-color: rgb(223, 223, 223);
+            font-family: sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Estudando DOM</h1>
+    <p>19 de junho de 2023, segunda feira</p>
+
+    <div>
+        <p>Clique em Mim</p>
+    </div>
+    <script>
+        var p1 = window.document.getElementsByTagName("p")[0]
+        window.document.write(p1.innerText)
+        p1.style.color = 'blue'
+    </script>
+</body>
+
+</html>
