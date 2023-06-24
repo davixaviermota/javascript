@@ -16,12 +16,26 @@
             text-align: center;
             line-height: 200px; /*para posicionar o texto no centro do box*/
         }
+        #area:hover{
+            background-color: rgb(0, 0, 184);
+            cursor: pointer; /*para mudar o cursor/ponteiro*/
+        }
     </style>
 </head>
 <body>
-    <div id="area">
+    <div id="area" onclick="clicar()"> <!--esse clicar é o metodo que vai ser disparado no JS-->
         <p>Interaja aqui!!</p>
     </div>
-    
+   
+
+
+    <script>
+        function clicar() {
+            a = window.document.getElementById('area')
+            a.innerText = 'Clicou'
+
+        }
+
+    </script>
 </body>
 </html>
