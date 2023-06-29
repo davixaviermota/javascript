@@ -12,7 +12,7 @@
         <h1>Somando Média de Aluno</h1>
     </header>
     <main>
-        <form action="media.js" method="post">
+        
 
             <p>
                 <label for="aluno">Aluno:</label>
@@ -41,13 +41,32 @@
                 <input type="number" step="0.1" id="nota4" min="0" max="10" >
             </p>
             <p>
-                <input type="submit" id="enviar">
+                <input type="submit" id="enviar" value='Somar' onclick="somar()">
             </p>
+            <p>
+                <input type="reset" id="limpar" value="Limpar">
+            </p>
+            
 
-        </form>
+        
         <div id="res">
             <p>Resultado</p>
         </div>
     </main>
+    <script>
+        function somar(){
+    var aluno = document.getElementById('aluno').value
+    var n1 = document.getElementById('nota1').value /*para pegar o valor */
+    var n2 = document.getElementById('nota2').value
+    var n3 = document.getElementById('nota3').value
+    var n4 = document.getElementById('nota4').value
+    var res = document.getElementById('res')
+    
+    var media = (Number(n1) + Number(n2) + Number(n3) + Number(n4) ) / 4
+    
+    res.innerText = (`Seu nome é ${aluno} e sua média é ${media}`)
+    
+}
+    </script>
 </body>
 </html>
