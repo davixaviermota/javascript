@@ -15,15 +15,39 @@
         <form action="media.js" method="post">
 
             <p>
-                <label for="ialuno">Aluno:</label>
-                <input type="text" id="ialuno" maxlength="30" min="0" required>
+                <label for="aluno">Aluno:</label>
+                <input type="text" id="aluno" maxlength="30" min="0" required>
             </p>
 
             <p>
-                <label for="i"></label>
+                <label for="iturno">Turno:</label>
+                <input type="text" id="iturno">
+            </p>
+            <p>
+                <label for="nota1">Nota 1:</label>
+                <input type="number" step="0.1" id="nota1" min="0" max="10" >
+            </p>
+            
+            <p>
+                <label for="nota2">Nota 2:</label>
+                <input type="number" step="0.1" id="nota2" min="0" max="10" >
+            </p>
+            <p>
+                <label for="nota3">Nota 3:</label>
+                <input type="number" step="0.1" id="nota3" min="0" max="10" >
+            </p>
+            <p>
+                <label for="nota4">Nota 4:</label>
+                <input type="number" step="0.1" id="nota4" min="0" max="10" >
+            </p>
+            <p>
+                <input type="submit" id="enviar">
             </p>
 
         </form>
+        <div id="res">
+            <p>Resultado</p>
+        </div>
     </main>
 </body>
 </html>
