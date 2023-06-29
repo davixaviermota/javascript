@@ -8,7 +8,7 @@
 
 }
 header{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.801);
     color: white;
     text-align: center;
     padding: 10px;
@@ -18,7 +18,6 @@ header{
 main{
     text-align: center;
     
-    background-color: rgba(0, 0, 0, 0.137);
     width: 450px;
     margin: auto;
 }
@@ -27,6 +26,8 @@ main{
     margin: 20px;
     text-align: left;
     font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.829);
+    color: rgb(0, 0, 0);
 
 }
 input{
@@ -41,16 +42,22 @@ input{
     cursor: pointer;
 }
 #enviar:hover{
-    background-color: rgba(0, 0, 0, 0.349);
+    background-color: rgb(224, 135, 0);
+    color: white;
 }
 #res{
     margin: auto;
-    background-color:rgba(0, 0, 0, 0.342) ;
-    width: 410px;
+    background-color: rgba(255, 255, 255, 0.829);
+    width: 370px;
     padding: 20px;
     font-weight: bold;
     
 }
-#res:hover{
-    background-color: rgba(0, 0, 0, 0.158);
+
+body{
+    background: url(livros.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
