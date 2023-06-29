@@ -34,6 +34,15 @@ input{
     margin: 5px;
     border: 0;
 }
+#enviar{
+    padding: 15px;
+    margin-top: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#enviar:hover{
+    background-color: rgba(0, 0, 0, 0.349);
+}
 #res{
     margin: auto;
     background-color:rgba(0, 0, 0, 0.342) ;
