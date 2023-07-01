@@ -4,26 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detran</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+        body{
+            font-family: 'DM Sans', sans-serif;
+            background-color: rgb(255, 153, 0);
+
+        }
+        section{
+            background-color: white;
+            text-align: center;
+            width: 500px;
+            height: 250px;
+            margin: auto;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.274);
+        }
+        h1{
+            padding-top: 19px;
+        }
+        #forms{
+            padding-bottom: 18px;
+        }
+        #res{
+            
+            color: rgb(255, 255, 255);
+            width: 300px;
+            margin: auto;
+            font-weight: bold;
+        }
+        #btn{
+
+        padding: 7px;
+        }
+    </style>
 </head>
 <body>
+
+    <section>
     <h1>Sistema de Multas</h1>
-    <p>
+    <p id="forms">
         <label for="ivel">Velocidade do Carro</label>
         <input type="number" id="ivel" required max="150"> km/h
-        <input type="button" value="Verificar" onclick="calcular()">
+        <input type="button" value="Verificar" onclick="calcular()" id="btn">
     </p>
     <div id="res">
 
     </div>
-
+</section>
     <script>
         function calcular(){
          var ivel = document.getElementById('ivel').value
         var vel = Number(ivel)
         var rel = window.document.getElementById('res')
-        res.innerHTML = `sua velocidade atual é ${vel}KM/h `   
-        res 
+        res.innerHTML = `Sua velocidade atual é ${vel}KM/h `   
+        
+        if(vel > 60){
+            res.innerHTML += `<p> Você está Multado por excesso de velocidade`
+            res.style.background = 'red'
+            
+        } else{
+            res.innerHTML = `Prossiga, tenha uma boa viagem!`
+            res.style.background = 'green'
         }
+
+        }
+
         
 
     </script>
