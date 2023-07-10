@@ -7,6 +7,7 @@ var hora = data.getHours()
 
 msg.innerHTML = `Agora são ${hora} horas`
 
+
     if(hora >= 0 && hora < 12){  // aqui quando a hora for maior ou igual a zero e (&&) a hora for menor que 12 será dia
     /*bom dia */
         imagem.src = 'manha.png'
