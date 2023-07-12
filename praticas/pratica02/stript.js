@@ -7,7 +7,7 @@ function verificar(){
    if (nasc.value.length == 0 || nasc.value > ano) { //aqui é tipo uma validação, se o valor do nasc for igual a 0 ou seja se nao for digitado nada, ou ou valor do nasc ser maior que ano(2023)
 
 //vai aparecer o alerta
-     window.alert('erro, verifique os dados')
+     window.alert('Erro, verifique os dados')
 
    } else{ //se nao
     var sex = document.getElementsByName('sex') //peguei o inpute da bolinha de masc e femi
@@ -15,6 +15,7 @@ function verificar(){
     var genero = '' //criei uma var vazia
     var img = document.createElement('img') //criando um elemento no js, uma tag de imagem
     img.setAttribute('id', 'foto') //aqui eu atribui a tag um id = foto
+    
 
     // condição para os inputs radio masculino e feminino
     if (sex[0].checked) { //se o sex(var dos inpts) tiver marcado, ou em zero 
