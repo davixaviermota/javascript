@@ -36,17 +36,21 @@ function verificar(){
       genero = 'mulher' // só que agora vai ser mulher quando tiver marcado 1 (por que no inpute radio é enviado se agente marcou masculino ou feminino como 0 ou 1)
       if(idade >= 0 && idade < 10){
         //crianca
+        img.setAttribute('src', 'bebe-f.png')
       }else if( idade <21){
         //jovem
+        img.setAttribute('src', 'menina.png')
 
       } else if(idade <50){
         //adulto
+        img.setAttribute('src', 'mulher.png')
       }else{
         //idoso
+        img.setAttribute('src', 'senhora.png')
       }
     }
    }
-   res.innerHTML = `Detectamos ${genero} com ${idade} de idade`
+   res.innerHTML = `Detectamos ${genero} com ${idade} anos de idade`
    res.appendChild(img) //aqui é para adicionar o elemento, para as imagens aparacer
 
 }
