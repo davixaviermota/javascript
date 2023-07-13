@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário </title>
+</head>
+<body>
+    <section>
+    <h1>Estudando mais sobre Formulários</h1>
+    <form action="get">
+        <p>
+            <label for="cida">Cidades:</label>
+            <select name="cida" id="cida">
+
+                
+            <optgroup label="cidades baianas">
+                <option value="SAJ">Santo Antonio de Jesus</option>
+                <option value="CA">Castro Alves</option>
+                <option value="CAL">Cruz das Almas</option>
+            </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="prof">Profissaõ:</label>
+            <input type="text" id="prof" list="list">
+            <datalist id="list">
+                <option > Administrador</option>
+                <option >Tecnico em Informática</option>
+                <option >Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="msg">Deixe sua Dúvida:</label> <br> <br>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </p>
+
+        <input type="button" value="Enviar" id="btn">
+    </form>
+</section>
+</body>
+</html>
