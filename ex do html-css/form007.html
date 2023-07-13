@@ -8,10 +8,14 @@
 </head>
 <body>
     <section>
-    <h1>Estudando mais sobre Formulários</h1>
+    <h1>Cadastre-se</h1>
     <form action="get">
         <p>
-            <label for="cida">Cidades:</label>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+        </p>
+       <!-- <p>
+            <label for="cida">Cidade:</label>
             <select name="cida" id="cida">
 
                 
@@ -22,10 +26,10 @@
             </optgroup>
             </select>
         </p>
-
+-->
         <p>
-            <label for="prof">Profissaõ:</label>
-            <input type="text" id="prof" list="list">
+            <label for="curso">Cursos:</label>
+            <input type="text" id="curso" list="list">
             <datalist id="list">
                 <option > Administrador</option>
                 <option >Tecnico em Informática</option>
@@ -33,12 +37,18 @@
             </datalist>
         </p>
         <p>
-            <label for="msg">Deixe sua Dúvida:</label> <br> <br>
+            <label for="msg">Seus planos para o futuro:</label> <br> <br>
             <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
         </p>
 
-        <input type="button" value="Enviar" id="btn">
+        <input type="button" value="Enviar" id="btn" onclick="clicou()">
     </form>
+    <div id="res">
+        <p>
+            
+        </p>
+    </div>
 </section>
+<script src="script.js"></script>
 </body>
 </html>
